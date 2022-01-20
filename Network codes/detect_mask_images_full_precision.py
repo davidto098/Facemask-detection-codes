@@ -94,8 +94,8 @@ weightsPath = "face_detector/res10_300x300_ssd_iter_140000.caffemodel"
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 #-------------------------------------------------------------------------
-modelo = "v4"
-selector = "con"
+modelo = "v1" # v1, v2, v3, v4
+selector = "con"  # sin, error, con
 #-------------------------------------------------------------------------
 
 # load the face mask detector model from disk
@@ -200,7 +200,7 @@ print("{} Rostros fueron clasificados".format(len(Resultados)) )
 print("Con mascarilla = ", np.count_nonzero(np.array(Resultados) == 0))
 print("Mal Puesta = ", np.count_nonzero(np.array(Resultados) == 1))
 print("Sin Mascarilla = ", np.count_nonzero(np.array(Resultados) == 2))
-print("Presicion = ", str(round(1/(len(Resultados)/np.count_nonzero(np.array(Resultados) == a))*100,3)),"%")
+print("Precision = ", str(round(1/(len(Resultados)/np.count_nonzero(np.array(Resultados) == a))*100,3)),"%")
 print("Confiabilidad =", str(round(Avgconfi * 100 , 3)) ,"%")
 print("Error = ", str(round(100 - 1/(len(Resultados)/np.count_nonzero(np.array(Resultados) == a))*100,3)),"%")
 print("Tiempo promedio de clasificacion = ",str(round((AvgFin - AvgInicio)*1000,3)),"mS")

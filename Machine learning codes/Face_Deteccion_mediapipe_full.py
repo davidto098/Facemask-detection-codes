@@ -4,7 +4,7 @@ import numpy as np
 from math import acos, degrees
 import os
 
-dataPath = "/home/david/Documentos/Python Scripts/Proyecto de grado/Datasets_completos/sin_mascarilla"
+dataPath = "/home/david/Documentos/Python Scripts/VERSION DE REDES/Face-Mask-Detection/dataset/error_mask"
 dir_list = os.listdir(dataPath)
 #dir_list.sort()
 mp_face_detection = mp.solutions.face_detection
@@ -75,10 +75,10 @@ with mp_face_detection.FaceDetection( min_detection_confidence=0.7) as face_dete
                         cv2.imshow('frame', frame)
                         cv2.imshow('aligned', aligned_image)
                         cv2.imshow('Cara Alineada', face_image)  
-                        face_image = cv2.cvtColor(face_image, cv2.COLOR_BGR2GRAY)
-                        face_image = cv2.resize(face_image, (72, 72), interpolation=cv2.INTER_CUBIC)
-                        #cv2.imwrite(name_dir,face_image)
-                        #os.rename(name_dir,"/home/david/Documentos/Python Scripts/Proyecto de grado/Dataset de entrenamiento/Sin_mascarilla/{}".format(name_dir))
+                        #face_image = cv2.cvtColor(face_image, cv2.COLOR_BGR2GRAY)
+                        #face_image = cv2.resize(face_image, (72, 72), interpolation=cv2.INTER_CUBIC)
+                        cv2.imwrite(name_dir,face_image)
+                        os.rename(name_dir,"/home/david/Documentos/Python Scripts/VERSION DE REDES/Face-Mask-Detection/dataset/Error_mask_recorted/{}".format(name_dir))
                         lista.append(face_image)
                         print("imagen #{},{}".format(len(lista),name_dir))
         k = cv2.waitKey(1)

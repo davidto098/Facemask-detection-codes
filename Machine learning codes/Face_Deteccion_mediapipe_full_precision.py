@@ -5,9 +5,9 @@ from math import acos, degrees
 import os
 import time 
 
-dataPath = "/home/david/Documentos/Python Scripts/Proyecto de grado/Dataset_de_prueba/Prueba_{}_mascarilla"\
-.format("sin")
-a = 2
+dataPath = "/home/david/Documentos/Python Scripts/VERSION ACTUAL/Proyecto de grado/Dataset_de_prueba/Prueba_{}_mascarilla"\
+.format("con")
+a = 0
 LABELS = ["Con_mascarilla", "Mal_puesta" ,"Sin_mascarilla"]
 dir_list = os.listdir(dataPath)
 #dir_list.sort()
@@ -20,19 +20,19 @@ LsAllInicio = []
 Resultados = [] #Lista de alamacenamiento de resultados
 
 
-
+"""
 # Leer el modelo LBPH
 face_mask = cv2.face.LBPHFaceRecognizer_create()
-Modelo_name ="V2/Modelos LBPH V2/LBPH_im800_v2.xml"
+Modelo_name ="V2/Modelos LBPH V2/LBPH_im1200_v2.xml"
 face_mask.read(Modelo_name)
 
 """
 
 # Leer el modelo Eigen faces
 face_mask = cv2.face.EigenFaceRecognizer_create()
-Modelo_name = "V2/Modelos Eigen V2/Eigen_im1100_v2.xml"
+Modelo_name = "V2/Modelos Eigen V2/Eigen_im1200_v2.xml"
 face_mask.read(Modelo_name)
-"""
+
 
 with mp_face_detection.FaceDetection( min_detection_confidence= 0.7) as face_detection:
    
@@ -157,7 +157,7 @@ print("{} Rostros fueron clasificados".format(len(Resultados)) )
 print("Con mascarilla = ", np.count_nonzero(np.array(Resultados) == 0))
 print("Mal Puesta = ", np.count_nonzero(np.array(Resultados) == 1))
 print("Sin Mascarilla = ", np.count_nonzero(np.array(Resultados) == 2))
-print("Presicion = ", str(round(1/(len(Resultados)/np.count_nonzero(np.array(Resultados) == a))*100,3)),"%")
+print("Precision = ", str(round(1/(len(Resultados)/np.count_nonzero(np.array(Resultados) == a))*100,3)),"%")
 print("Error = ", str(round(100 - 1/(len(Resultados)/np.count_nonzero(np.array(Resultados) == a))*100,3)),"%")
 print("Tiempo promedio de clasificacion = ",str(round((AvgFin - AvgInicio)*1000,3)),"mS")
 print("Tiempo promedio de ejecucion del codigo = ",str(round((AvgFin - AvgAllInicio)*1000,3)),"mS")
