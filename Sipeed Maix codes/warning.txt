@@ -1,0 +1,37 @@
+=========================================================================
+train warnings: these warn info may lead train error(accuracy loss), please check carefully
+=========================================================================
+训练警告： 这些警告信息可能导致训练误差，请务必仔细检查
+=========================================================================
+
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1436.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1418.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1388.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1345.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1334.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1325.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1317.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1301.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1288.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1231.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1209.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1149.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1138.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1071.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
+decode xml /tmp/train_temp_sipeed_compile_server_gpu3/datasets/datasets_separados/xml/no_mask/1042.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+
